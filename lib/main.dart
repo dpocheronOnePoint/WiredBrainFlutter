@@ -3,6 +3,7 @@ import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:wired_brain_flutter/data_providers/http_client.dart';
+import 'package:wired_brain_flutter/screens/register_screen.dart';
 import 'package:wired_brain_flutter/screens/splash_screen.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'firebase_options.dart';
@@ -33,7 +34,7 @@ Future<void> main() async {
         child: MaterialApp(
           debugShowCheckedModeBanner: false,
           themeMode: ThemeMode.system,
-          home: const SplashScreen(),
+          home: RegisterScreen(),
           navigatorKey: CoffeeRouter.instance.navigatorKey,
           theme: getTheme(),
         ),
