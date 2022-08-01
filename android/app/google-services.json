@@ -7,42 +7,6 @@
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:1045991593395:android:1a3d41cdce08788e7867c6",
-        "android_client_info": {
-          "package_name": "com.example.wired_brain_flutter"
-        }
-      },
-      "oauth_client": [
-        {
-          "client_id": "1045991593395-7q4ncapo1njpabq4jdku3bo2v86asqo6.apps.googleusercontent.com",
-          "client_type": 3
-        }
-      ],
-      "api_key": [
-        {
-          "current_key": "AIzaSyDTGf4T7irKv9Mc9JWwfPYkM7TUmLPLM_k"
-        }
-      ],
-      "services": {
-        "appinvite_service": {
-          "other_platform_oauth_client": [
-            {
-              "client_id": "1045991593395-7q4ncapo1njpabq4jdku3bo2v86asqo6.apps.googleusercontent.com",
-              "client_type": 3
-            },
-            {
-              "client_id": "1045991593395-0qhsc1tje2inc5ncfunaicgbp2rpv00f.apps.googleusercontent.com",
-              "client_type": 2,
-              "ios_info": {
-                "bundle_id": "com.example.wiredBrainFlutter"
-              }
-            }
-          ]
-        }
-      }
-    },
-    {
-      "client_info": {
         "mobilesdk_app_id": "1:1045991593395:android:ab160e7f014373ce7867c6",
         "android_client_info": {
           "package_name": "io.wiredbrain.app"

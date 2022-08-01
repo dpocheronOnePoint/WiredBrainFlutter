@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_spinkit/flutter_spinkit.dart';
+import 'package:wired_brain_flutter/coffee_router.dart';
+import 'package:wired_brain_flutter/screens/home_screen.dart';
+import 'package:wired_brain_flutter/screens/menu_screen.dart';
 import 'package:wired_brain_flutter/services/auth.dart';
 
 class SplashScreen extends StatefulWidget {
@@ -25,7 +28,10 @@ class _SplashScreenState extends State<SplashScreen> {
     super.initState();
     Future.delayed(const Duration(milliseconds: 1000), () {
       if (_authService.currentUser != null) {
-      } else {}
+        CoffeeRouter.instance.pushReplacement(MenuScreen.route());
+      } else {
+        CoffeeRouter.instance.pushReplacement(HomeScreen.route());
+      }
     });
   }
 
