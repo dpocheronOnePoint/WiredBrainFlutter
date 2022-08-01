@@ -24,7 +24,7 @@ class CoffeeRouter {
   String initialRoute = SplashScreen.routeName;
 
   /// Wdiget to be loaded first
-  Widget home = SplashScreen();
+  Widget home = const SplashScreen();
 
   Future<T?> push<T extends Object>(Route<T> route) async {
     return navigatorKey.currentState!.push(route);
@@ -40,8 +40,8 @@ class CoffeeRouter {
   }) async {
     return navigatorKey.currentState!.pushAndRemoveUntil(
       route,
-      (Route<dynamic> _route) {
-        return untilRoute == _route.settings.name;
+      (Route<dynamic> route) {
+        return untilRoute == route.settings.name;
       },
     );
   }

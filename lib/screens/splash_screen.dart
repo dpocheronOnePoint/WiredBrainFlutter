@@ -9,7 +9,7 @@ class SplashScreen extends StatefulWidget {
   static Route<SplashScreen> route() {
     return MaterialPageRoute<SplashScreen>(
       settings: RouteSettings(name: routeName),
-      builder: (BuildContext context) => SplashScreen(),
+      builder: (BuildContext context) => const SplashScreen(),
     );
   }
 
